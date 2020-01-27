@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Login</title>
+	</head>
+	<body>
+		<script>
+			email = 'anonymous1010@gmail.com';
+			userName = 'anonymous';
+			password = '123456';
+			
+			user_name = prompt('Enter User Name: ');
+			entered_username = user_name;
+			
+			user_email = prompt('Enter Email Address: ');
+			entered_email = user_email;
+			
+			account_password = prompt('Enter Password: ');
+			entered_password = account_password;
+			
+			if(entered_username == userName && entered_email == email && entered_password == password){
+				document.write('<h1>ACCESS GRANTED</h1>');
+				document.write('Name: Khalid Al-Asad');
+				document.write('<br>');
+				document.write('<h4>Professions & Expertise: </h4>');
+				document.write('1. Software Engineering');
+				document.write('<br>');
+				document.write('2. Networking');
+				document.write('<br>');
+				document.write('3. Cyber Security');
+				document.write('<br>');
+				document.write('4. Information Security');
+				document.write('<br>');
+				document.write('5. Data Science');
+			}
+			else{
+				alert('ACCESS DENIED');
+			}
+		</script>
+	</body>
+</html>
